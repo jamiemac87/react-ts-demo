@@ -1,0 +1,32 @@
+{
+  "lintOptions": {
+    "typeCheck": true
+  },
+  "extends": [
+    "tslint:recommended",
+    "tslint-react",
+    "tslint-config-prettier"
+  ],
+  "rules": {
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+    "interface-name": false,
+    "jsx-no-lambda": false,
+    "jsx-boolean-value": false,
+    "member-access": false,
+    "member-ordering": false,
+    "no-empty-interface": false,
+    "array-type": false,
+    "prefer-const": false,
+    "no-console": [
+      true,
+      "log"
+    ]
+  },
+  "linterOptions": {
+    "exclude": [
+      "node_modules/**/*.{ts,tsx}",
+      "**/__tests__/**/*.{ts,tsx}"
+    ]
+  }
+}
