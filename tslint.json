@@ -18,10 +18,7 @@
     "no-empty-interface": false,
     "array-type": false,
     "prefer-const": false,
-    "no-console": [
-      true,
-      "log"
-    ]
+    "no-console": false
   },
   "linterOptions": {
     "exclude": [

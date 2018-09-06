@@ -1,9 +1,9 @@
-import { AppState, rootReducer } from './reducers/index';
-import { createStore } from 'redux';
-declare const window: any;
+import { actionCreatorMiddleware } from './middleware/action-creator.middleware';
+import { rootReducer } from './reducers/index';
+import { createStore, applyMiddleware } from 'redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
 
-export const initStore = (initialState: AppState) => createStore(
+export const initStore = () => createStore(
   rootReducer,
-  initialState,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  composeWithDevTools(applyMiddleware(actionCreatorMiddleware)),
 );

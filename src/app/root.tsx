@@ -4,7 +4,7 @@ import { initStore } from "../store";
 import { ConnectedApp } from "./app";
 
 export const Root = () => (
-  <Provider store={initStore({ name: 'Jamie' })}>
+  <Provider store={initStore()}>
     <ConnectedApp greeting="Hello" />
   </Provider>
 );
